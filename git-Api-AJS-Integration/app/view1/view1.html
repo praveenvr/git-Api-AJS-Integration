@@ -1,0 +1,19 @@
+<h2>
+    All users
+</h2>
+<input type="text" ng-model="filterName" placeholder="Filter List">
+<ul>
+    <li ng-repeat="repoDetail in repoDetails.data | filter:filterName" ng-if="repoDetail">
+        
+        <div class="user-avatar">
+            <img src="{{repoDetail.avatar_url}}" alt="{{repoDetail.login}}">
+        </div>
+        <div>
+            {{repoDetail.login}}
+        </div>
+
+
+    </li>
+</ul>
+
+<div class="error">{{statusMessage}}</div>

@@ -1,0 +1,101 @@
+/* app css stylesheet */
+
+body{
+  font-size:14px;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.menu a{
+
+}
+header{
+  padding: 20px;
+}
+
+main {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+footer{
+  text-align: center;
+  padding: 10px;
+  background: #e5e5e5;
+}
+form{
+  margin: 20px 0;
+}
+ul:not(.menu){
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+ul:not(.menu) li{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  border-bottom:1px solid #f1f1f1;
+  padding: 10px;
+
+}
+ul:not(.menu) li > div{
+  margin-right: 10px;
+}
+ul:not(.menu) li:hover{
+  background: #f9f9f9;
+}
+input[type="text"]{
+  padding: 10px;
+  border:none;
+  border-bottom: 1px solid darkcyan;
+}
+input[type="text"]:focus{
+  outline: none;
+}
+input[type="submit"]{
+  border:none;
+  background: darkcyan;
+  color: #fff;
+  padding:10px;
+}
+.user-avatar{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.user-avatar img{
+  width: 100%;
+}
+.wrap-single-user-details{
+  display: flex;
+  flex-direction: column;
+}
+.wrap-repos {
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin: 20px;
+}
+.wrap-repos h4{
+  margin-top: 10px;
+}
+.error{
+  color: red;
+  padding:20px 10px;
+}
